@@ -1,0 +1,21 @@
+.food-item-modal {
+  button {
+    background-color: orangered;
+    color: white;
+    border-color: orangered;
+  }
+
+  button:hover,
+  button:focus {
+    color: white;
+  }
+
+  .btn-close {
+    background-color: white;
+    color: black;
+    border-color: white;
+  }
+  .btn-close:hover {
+    color: black;
+  }
+}

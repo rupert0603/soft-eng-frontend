@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./css/main.css";
+import { Switch, Route } from "react-router-dom";
+import SignupPage from "./containers/SignupPage";
+import SigninPage from "./containers/SigninPage";
+import HomePage from "./containers/HomePage";
+import FoodMenu from "./containers/FoodMenu";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faGlassMartiniAlt } from "@fortawesome/free-solid-svg-icons";
+
+library.add(fab, faGlassMartiniAlt);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route exact path="/sign-up">
+          <SignupPage />
+        </Route>
+        <Route exact path="/sign-in">
+          <SigninPage />
+        </Route>
+        <Route exact path="/home">
+          <HomePage />
+        </Route>
+        <Route exact path="/food-menu">
+          <FoodMenu />
+        </Route>
+      </Switch>
     </div>
   );
 }

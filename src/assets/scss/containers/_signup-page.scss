@@ -1,0 +1,27 @@
+.signup-page {
+  h2,
+  label,
+  a,
+  a:hover {
+    color: orangered;
+  }
+
+  button {
+    background-color: orangered;
+    color: white;
+    border-color: orangered;
+  }
+
+  button:hover,
+  button:focus {
+    color: white;
+  }
+
+  .form-check label {
+    color: inherit;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
