@@ -1,0 +1,21 @@
+.my-cart-page {
+  h1 {
+    color: orangered;
+  }
+  .checkout-btn {
+    background-color: orangered;
+    color: white;
+    border-color: orangered;
+    // text-decoration: none !important;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .checkout-btn:hover,
+  .checkout-btn:focus {
+    color: white;
+  }
+}

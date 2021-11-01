@@ -3,7 +3,7 @@ import CarouselMilkTea from "../components/CarouselMilkTea";
 
 function HomePage(props) {
   return (
-    <div className="container">
+    <div className="container mt-3 home-page">
       <div className="row mb-3">
         <Profile />
       </div>

@@ -1,18 +1,26 @@
-import { createStore, applyMiddleware } from 'redux';
-import { combineReducers } from 'redux-immer';
-import produce from 'immer';
+import { createStore, applyMiddleware } from "redux";
+import { combineReducers } from "redux-immer";
+import produce from "immer";
+import thunk from "redux-thunk";
 
 // Reducers
-// import { user } from './reducers/user';
-// import { catalog } from './reducers/catalog';
+import { signin } from "./reducers/signin";
+import { signup } from "./reducers/signup";
+import { products } from "./reducers/products";
+import { shop } from "./reducers/shop";
+import { orders } from "./reducers/orders";
+import { user } from "./reducers/user";
 
 export const store = createStore(
   combineReducers(produce, {
-    //  user,
-    //  catalog,
-     // ...
+    signin,
+    signup,
+    products,
+    shop,
+    orders,
+    user,
   }),
-  // applyMiddleware...
+  applyMiddleware(thunk)
 );
 
 export default store;

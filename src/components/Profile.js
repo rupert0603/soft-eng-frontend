@@ -5,6 +5,8 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Nav from "react-bootstrap/Nav";
+import MyOrders from "./MyOrders";
+import MyProfile from "./MyProfile";
 
 function createGreeting() {
   //   const morningStart = "0:00";
@@ -31,7 +33,7 @@ function Profile(props) {
 
   return (
     <div className="w-100">
-      <Tab.Container defaultActiveKey="boba-rewards">
+      <Tab.Container defaultActiveKey="my-orders">
         <Row>
           <Nav variant="tabs">
             <Col sm={6}>
@@ -42,8 +44,13 @@ function Profile(props) {
               </Nav.Item>
             </Col>
             <Col sm={2}>
-              <Nav.Item variant="pills">
+              {/* <Nav.Item variant="pills">
                 <Nav.Link eventKey="boba-rewards">Boba Rewards</Nav.Link>
+              </Nav.Item> */}
+            </Col>
+            <Col sm={2}>
+              <Nav.Item>
+                <Nav.Link eventKey="my-orders">Orders</Nav.Link>
               </Nav.Item>
             </Col>
             <Col sm={2}>
@@ -51,26 +58,25 @@ function Profile(props) {
                 <Nav.Link eventKey="profile">Profile</Nav.Link>
               </Nav.Item>
             </Col>
-            <Col sm={2}>
-              <Nav.Item>
-                <Nav.Link eventKey="inbox">Inbox</Nav.Link>
-              </Nav.Item>
-            </Col>
           </Nav>
         </Row>
         <Row>
           <Col sm={12}>
             <Tab.Content>
-              <Tab.Pane eventKey="boba-rewards">
+              {/* <Tab.Pane eventKey="boba-rewards">
                 Boba Rewards
                 <br />
                 <ProgressBar
                   now={bobaRewardsStatus}
                   label={`${bobaRewardsStatus}/100 🌟`}
                 />
+              </Tab.Pane> */}
+              <Tab.Pane eventKey="my-orders">
+                <MyOrders />
               </Tab.Pane>
-              <Tab.Pane eventKey="profile">Profile</Tab.Pane>
-              <Tab.Pane eventKey="inbox">Inbox</Tab.Pane>
+              <Tab.Pane eventKey="profile">
+                <MyProfile />
+              </Tab.Pane>
             </Tab.Content>
           </Col>
         </Row>

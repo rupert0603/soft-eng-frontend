@@ -26,6 +26,25 @@
 .food-item-modal .btn-close:hover {
   color: black; }
 
+.placed-order .net-total {
+  color: black; }
+
+.product-catalogue .update-product-btn {
+  color: white; }
+
+.product-catalogue .update-product-btn:hover,
+.product-catalogue .update-product-btn:focus {
+  color: white; }
+
+.update-product-modal .update-product-btn {
+  background-color: orangered;
+  color: white;
+  border-color: orangered; }
+
+.update-product-modal .update-product-btn:hover,
+.update-product-modal .update-product-btn:focus {
+  color: white; }
+
 .signup-page h2, .signup-page .h2,
 .signup-page label,
 .signup-page a,
@@ -77,6 +96,38 @@
 .food-menu-page button:hover,
 .food-menu-page button:focus {
   color: white; }
+
+.checkout-page h1, .checkout-page .h1 {
+  color: orangered; }
+
+.checkout-page .checkout-btn {
+  background-color: orangered;
+  color: white;
+  border-color: orangered; }
+
+.checkout-page .checkout-btn:hover,
+.checkout-page .checkout-btn:focus {
+  color: white; }
+
+.my-cart-page h1, .my-cart-page .h1 {
+  color: orangered; }
+
+.my-cart-page .checkout-btn {
+  background-color: orangered;
+  color: white;
+  border-color: orangered; }
+  .my-cart-page .checkout-btn a {
+    text-decoration: none;
+    color: white; }
+
+.my-cart-page .checkout-btn:hover,
+.my-cart-page .checkout-btn:focus {
+  color: white; }
+
+.home-page h1, .home-page .h1,
+.home-page h2,
+.home-page .h2 {
+  color: orangered; }
 
 body {
   font-family: Arial, Helvetica, sans-serif; }

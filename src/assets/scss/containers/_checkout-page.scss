@@ -1,0 +1,15 @@
+.checkout-page {
+  h1 {
+    color: orangered;
+  }
+  .checkout-btn {
+    background-color: orangered;
+    color: white;
+    border-color: orangered;
+  }
+
+  .checkout-btn:hover,
+  .checkout-btn:focus {
+    color: white;
+  }
+}

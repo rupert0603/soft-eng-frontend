@@ -1,9 +1,16 @@
 @import "components/carousel-milk-tea";
 @import "components/food-item-modal";
+@import "components/create-product";
+@import "components/placed-order";
+@import "components/product-catalogue";
+@import "components/update-product-modal";
 
 @import "containers/signup-page";
 @import "containers/signin-page";
 @import "containers/food-menu";
+@import "containers/checkout-page";
+@import "containers/my-cart-page";
+@import "containers/home-page";
 
 @import "globals/global";
 
