@@ -5,3 +5,4 @@ export const STRIPE_TEST_PUBLISHABLE_KEY =
 export const API_MAIN = "https://soft-eng-backend.onrender.com/api/v1";
 // export const API_MAIN = "https://grab-a-tea-api.herokuapp.com/";
 export const BOBA_REWARDS_RATE = 0.05;
+export const BASE_PATH = "/soft-eng-frontend";
